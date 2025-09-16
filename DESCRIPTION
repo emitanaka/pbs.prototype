@@ -1,0 +1,29 @@
+Package: pbs.prototype
+Type: Package
+Title: A prototype plant breeding simulation with a large language model using edibble and AlphaSimR 
+Version: 0.0.0.9000
+Authors@R: person(
+    "Emi", "Tanaka",
+    role = c("aut", "cre", "cph"),
+    email = "dr.emi.tanaka@gmail.com",
+    comment = c(ORCID = "0000-0002-1455-259X")
+  )
+Description: This package is only a prototype to demonstrate the possibility of leveraging large language models to automate the specification of simulation using AlphaSimR with a given experimental design via edibble.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    edibble
+Imports: 
+    AlphaSimR,
+    cli,
+    dplyr,
+    ellmer,
+    glue,
+    rlang
+Remotes:
+    emitanaka/edibble
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
